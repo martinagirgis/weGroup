@@ -19,9 +19,7 @@ Route::group([
     ], function()
     {
         /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-        // Route::get('/', function () {
-        //     return view('site.index');
-        // });
+        Route::get('/', function () {
+            return view('site.index');
+        });
 });
-
-

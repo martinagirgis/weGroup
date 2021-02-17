@@ -46,6 +46,12 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapMartinaRoutes();
+
+        $this->mapMohamedRoutes();
+
+        $this->mapRamajRoutes();
+
         //
     }
 
@@ -61,6 +67,24 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/web.php'));
+    }
+
+    protected function mapMartinaRoutes()
+    {
+        Route::namespace($this->namespace)
+             ->group(base_path('routes/martina.php'));
+    }
+
+    protected function mapMohamedRoutes()
+    {
+        Route::namespace($this->namespace)
+             ->group(base_path('routes/mohamed.php'));
+    }
+
+    protected function mapRamajRoutes()
+    {
+        Route::namespace($this->namespace)
+             ->group(base_path('routes/ramaj.php'));
     }
 
     /**
