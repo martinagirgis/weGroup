@@ -17,7 +17,7 @@ class CreateClientsTable extends Migration
             $table->id();
             $table->string('fname');
             $table->string('lname');
-            $table->string('feedback');
+            $table->text('feedback');
             $table->string('logo');
 
             $table->bigInteger('projectID')->unsigned()->nullable();

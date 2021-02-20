@@ -26,6 +26,7 @@
 
         <!-- Core Style Css -->
         <link rel="stylesheet" href="{{asset('/assets/site/css/style.css')}}" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </head>
 
@@ -108,6 +109,9 @@
 
       	<!-- custom scripts -->
         <script src="{{asset('/assets/site/js/scripts.js')}}"></script>
+
+		<!-- mail -->
+        <script src="{{asset('/assets/site/js/mail.js')}}"></script>
 
     </body>
 </html>

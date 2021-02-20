@@ -44,7 +44,7 @@
                                     </div>
 
                                     <div class="col-md-12 text-center">
-                                        <button type="submit"><span>Send Message</span></button>
+                                        <button type="submit" onclick="sendMail()"><span>Send Message</span></button>
                                     </div>
 
                                 </div>                             
@@ -54,6 +54,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- End Contact ====
         ======================================= -->
 
